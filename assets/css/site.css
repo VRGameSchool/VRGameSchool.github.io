@@ -490,7 +490,7 @@ section .section {
 }
 
 #contactme p {
-  color:white;
+  color:#D4D1E9;
 }
 
 @media (max-width: 699px){
@@ -517,12 +517,12 @@ section .section {
 }
 
 #twitter {
-  background-color: #4099FF;
+  background-color: #b9a0cd;
   transition: all 0.5s ease;
 }
 
 #facebook{
-  background-color: #3B5998;
+  background-color: #a17ebc;
   transition: all 0.5s ease;
 }
 
