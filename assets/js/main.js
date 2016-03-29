@@ -105,7 +105,7 @@ $(document).ready(function(){
   var map;
   function initMap() {
     var mapOptions = {
-      center: {lat: 34.0141137, lng: -118.4978121},
+      center: {lat: 34.1815775, lng: -118.3097096},
       zoom: 16,
       disableDefaultUI: true,
       scroll:{x:$(window).scrollLeft(),y:$(window).scrollTop()}
@@ -129,26 +129,4 @@ $(document).ready(function(){
   }
   initMap();
 
-// AJAX Click Functions
-  // Hide next button until a selection is made
-  $('#next').hide();
-  // Package Selection
-  $('div.section.interest').click(function(){
-    var selection = $(this);
-    var yourPackage = (selection.data('package'));
-    // Display Text of Package Selected
-    $('#selection').text("You have selected " + yourPackage);
-    if ($('#selection').text() != "Choose Your Membership Above") {
-      // Show Next Button
-      $('#next').show();
-    }
-  });
-  // Ajax Load Signup Form on Next Button Click
-  $('#next').click(function(){
-    $('#slide-1').load('views/signup.html');
-  });
-  // SUBMIT APPLICATION FORM
-  // $('#finish').click(function(){
-    // (Note: this is in script tag in views/signup.html)
-  // });
 });
