@@ -250,8 +250,6 @@ form input {
 .slide {
   width: 100%;
   text-align: left;
-  color: white;
-  background-color: #65c2c9;
   overflow: hidden;
 }
 
@@ -313,7 +311,7 @@ form input {
   text-align: right;
 }
 
-/* ABOUT ME SLIDE - CUSTOM STYLING */
+/* Slide 1 - CUSTOM STYLING */
 #slide-1 {
   background-color: white;
   color:#6C7A89;
@@ -357,52 +355,6 @@ section .section {
 #mywork .container {
   margin: 0 auto;
   max-width: 1056px;
-}
-
-/* FEATURED WORK TILE */
-.tile {
-  display: inline-block;
-  text-align: center;
-  background-color: transparent;
-  border: 4px solid transparent;
-  height: 250px;
-  width: 250px;
-  overflow: hidden;
-  transition: all 0.5s ease;
-}
-.tile:hover {
-  border: 4px solid #c1e6e9;
-}
-/* Tile Image Styling */
-.tile img {
-  height: 250px;
-  width: auto;
-}
-/* Front Tile */
-.tile-front {
-}
-/*Back Tile */
-.tile-back {
-  padding-top: 5px;
-  height: 250px;
-  background-color: #93d4d9;
-}
-/* App Details Section */
-.app-details {
-  padding: 16px;
-  text-align: left;
-}
-
-/* TILE SECTION MEDIA QUERY IPHONE*/
-@media (max-width: 699px) {
-  .tile, .section {
-    top: 0;
-    left: 0;
-    margin-left: -10px;
-  }
-  section .section {
-    font-size: 1em;
-  }
 }
 
 /* IMAGE PARALLAX STYLING */
