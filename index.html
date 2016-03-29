@@ -21,7 +21,7 @@
   <!-- Javascript -->
   <script type="text/javascript" src="assets/js/main.js"></script>
   <!-- Google Maps API -->
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANwIl8SeGlJnjsUxkzhjZLrZMLeWvav_k"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANwIl8SeGlJnjsUxkzhjZLrZMLeWvav_k&callback=initMap"></script>
 </head>
 <html>
 <body>
@@ -155,5 +155,38 @@
 
     <!-- (7) GOOGLE MAPS SECTION -->
     <div id="map-canvas"></div>
+    <script>
+      // Google Maps
+      var map;
+      function initMap() {
+        var mapOptions = {
+          center: {lat: 34.180, lng: -118.3076012},
+          zoom: 17,
+          disableDefaultUI: true,
+          scroll:{x:$(window).scrollLeft(),y:$(window).scrollTop()}
+        };
+        map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+        var marker = new google.maps.Marker({
+          position: {lat: 34.1812979, lng: -118.3076012},
+          map: map,
+          title: 'HanHai Studio'
+        });
+
+      // Paralax Google Map
+        var offset=$(map.getDiv()).offset();
+        map.panBy(((mapOptions.scroll.x-offset.left)/3),((mapOptions.scroll.y-offset.top)/3));
+
+        google.maps.event.addDomListener(window, 'scroll', function(){
+          var scrollY=$(window).scrollTop(),
+          scrollX=$(window).scrollLeft(),
+          scroll=map.get('scroll');
+          if(scroll){
+            map.panBy(-((scroll.x-scrollX)/3),-((scroll.y-scrollY)/3));
+          }
+          map.set('scroll',{x:scrollX,y:scrollY})
+        });
+      }
+      initMap();
+    </script>
 </body>
 </html>

@@ -101,32 +101,4 @@ $(document).ready(function(){
     }
   });
 
-  // Google Maps
-  var map;
-  function initMap() {
-    var mapOptions = {
-      center: {lat: 34.1815775, lng: -118.3097096},
-      zoom: 16,
-      disableDefaultUI: true,
-      scroll:{x:$(window).scrollLeft(),y:$(window).scrollTop()}
-    };
-    map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-  // Paralax Google Map
-    var offset=$(map.getDiv()).offset();
-    map.panBy(((mapOptions.scroll.x-offset.left)/3),((mapOptions.scroll.y-offset.top)/3));
-
-    google.maps.event.addDomListener(window, 'scroll', function(){
-      var scrollY=$(window).scrollTop(),
-      scrollX=$(window).scrollLeft(),
-      scroll=map.get('scroll');
-      if(scroll){
-        map.panBy(-((scroll.x-scrollX)/3),-((scroll.y-scrollY)/3));
-      }
-      map.set('scroll',{x:scrollX,y:scrollY})
-    });
-    // google.maps.event.addDomListener(window, 'load', initialize);
-  }
-  initMap();
-
 });
