@@ -77,8 +77,10 @@ $(document).ready(function(){
     $('#join-btn').click(function(){
       window.location = "https://www.eventbrite.com/e/make-your-own-vr-user-interface-2-day-event-tickets-24060041231";
     });
-
     $('#signup-btn').click(function(){
+      scrollTo('#contactme');
+    });
+    $('#nav-signup').click(function(){
       scrollTo('#contactme');
     });
 
