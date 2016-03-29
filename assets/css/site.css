@@ -116,13 +116,13 @@ side-nav h2 {
 .dot{
   height: 10px;
   width: 10px;
-  border: 1px solid #6C7A89;
+  border: 1px solid #D4D1E9;
   background-color: none;
   border-radius: 50%;
   margin: 5px;
 }
 .dotactive {
-  background-color: #6C7A89;
+  background-color: #D4D1E9;
 }
 
 /* FORM STUFFS */
@@ -153,7 +153,7 @@ form input {
 .btn {
   border: none;
   outline: none;
-  background-color: #52B3D9;
+  background-color: #7C519C;
   height: auto;
   width: auto;
   color: white;
@@ -164,10 +164,10 @@ form input {
   -webkit-appearance: none;
 }
 .btn:hover {
-  background-color: #67bcde;
+  background-color: #89519c;
 }
 .btn:active {
-  background-color: #3daad4;
+  background-color: #7C519C;
 }
 
 /*Basic Container Styling*/
@@ -334,7 +334,7 @@ form input {
 }
 
 .interest:hover {
-  border-bottom: 1px solid #52B3D9;
+  border-bottom: 1px solid #7C519C;
   transition: all 0.25s ease;
 }
 
@@ -479,7 +479,7 @@ section .section {
 }
 
 #contactme {
-  background-color: #34495E;
+  background-color: #3C214F;
   color:white;
   text-align: center;
   min-height: 50vh;
@@ -490,7 +490,7 @@ section .section {
 }
 
 #contactme p {
-  color:#52B3D9;
+  color:white;
 }
 
 @media (max-width: 699px){
