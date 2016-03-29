@@ -15,11 +15,151 @@
   <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300' rel='stylesheet' type='text/css'>
   <!-- CSS Style Sheet -->
   <link type="text/css" rel="stylesheet" href="assets/css/site.css"/>
+  <!-- Angular -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+  <!-- Google Jquery and Jquery UI -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
   <!-- Javascript -->
   <script type="text/javascript" src="assets/js/main.js"></script>
+  <!-- Google Maps API -->
+  <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqtWL9mfyesfD_zFEnBVv3kXfzpNMp3RY"></script> -->
 </head>
 <html>
-  <body>
-    <h1>GameSchool</h1>
-  </body>
+<body>
+  <!-- ROBOT NAV BAR R-SCREEN -->
+    <side-nav>
+      <div class="logo">
+        <div class="dot" id="dot0"></div>
+        <div class="dot" id="dot1"></div>
+        <div class="dot" id="dot2"></div>
+        <div class="dot" id="dot3"></div>
+        <div class="dot" id="dot4"></div>
+      </div>
+    </side-nav>
+
+  <!-- (1) Home Section Parallax -->
+    <section id="img-parallax-1" data-type="background" data-speed="10">
+      <div id="hero-text">
+        <div class="section">
+          <img src="assets/images/logo2.png" height="125px">
+          <h1>
+            <p>Bring Your own VR Exprience to Life</p>
+          </h1>
+          <input type="submit" value="Join our next Class" class="btn" id="join-btn">
+          <input type="submit" value="Stay up to Date" class="btn" id="signup-btn">
+        </div>
+      </div>
+    </section>
+
+    <!-- (2) SLIDE 1 -->
+      <div id="slide-1" class="slide">
+        <div class="container">
+          <h1>Start Learning Now!</h1>
+          <h3 id="selection">Join our upcoming classes:</h3>
+          <br />
+          <div class="section interest" data-package="daily">
+            <h2>Intro to Unity</h2>
+            <p>$150</p>
+            <p>Two night course for beginners</p>
+          </div>
+          <div class="section interest" data-package="part-time">
+            <h2>VR User Interface</h2>
+            <p>$150</p>
+            <p>Two night course for beginners</p>
+          </div>
+          <div class="section interest" data-package="member">
+            <h2>Intro to Code</h2>
+            <p>$350</p>
+            <p>1 week evening course</p>
+          </div>
+          <div class="section interest" data-package="dedicated">
+            <h2>360 Video</h2>
+            <p>$600</p>
+            <p>One day class and take home your own 360 camera!</p>
+          </div>
+          <div class="container">
+            <button class="btn" id="next">More Classes</button>
+          </div>
+        </div>
+      <!-- Close About Slide -->
+      </div>
+
+    <!-- (3) Section Parallax -->
+    <section id="img-parallax-2" data-type="background" data-speed="11">
+      <div class="section">
+        <h1>
+          <p>We believe that people should build the experiences they image.</p>
+        </h1>
+      </div>
+    </section>
+
+    <!-- (4) SLIDE 2 -->
+      <div id="slide-2">
+        <div class="container">
+          <h2>Our Partners</h2>
+          <h3></h3>
+        </div>
+    <!-- SECTION ONE -->
+        <div class="container">
+          <div class="section">
+            <div class="img-container">
+              <img src="assets/icons/partner1.png">
+            </div>
+          </div>
+    <!-- SECTION TWO -->
+          <div class="section">
+            <div class="img-container">
+              <img src="assets/icons/partner2.png">
+            </div>
+          </div>
+        </div>
+    <!-- CLOSE HOME SLIDE -->
+        </div>
+      </div>
+
+    <!-- (5) Section Parallax -->
+    <section id="img-parallax-3" data-type="background" data-speed="13">
+      <div class="section">
+        <h1>
+          <p>Unique Atmosphere.</p>
+          <p>We let creativity flourish, and innovation thrive.</p>
+        </h1>
+      </div>
+    </section>
+
+  <!-- (6) CONTACT SLIDE -->
+    <div id="contactme" class="slide">
+      <div class="container">
+        <h1><strong>Get in Touch</strong></h1>
+
+        <div class="section" id="contact-details">
+          <p><img src="assets/images/mobile.png"> 951-533-0506</p>
+          <p><img src="assets/images/mail.png"> hello@gameschool.io</p>
+          <p><img src="assets/images/location.png"> 250 E Olive Ave #202, Burbank, CA 91502</p>
+        </div>
+
+        <div class="section">
+        <p>Don't fall behind! Access our Newsletter:</p>
+          <form>
+            <input type="text" class="text-box" placeholder="your email">
+            <input type="submit" value="SignUp" class="btn">
+          </form>
+        </div>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="socmed">
+        <a href="http://twitter.com/" id="twitter"><img src="assets/images/twitter.png"></a>
+        <a href="http://facebook.com/" id="facebook"><img src="assets/images/facebook.png"></a>
+        <!-- <a href="http://linkedin.com/" id="linkedin"><img src="assets/images/linkedin.png"></a> -->
+        <!-- <a href="http://angel.co/" id="angelist"><img src="assets/images/angellist.png"></a> -->
+        <!-- <a href="http://github.com/" id="github"><img src="assets/images/github.png"></a> -->
+      </div>
+    </div>
+
+    <!-- (7) GOOGLE MAPS SECTION -->
+    <div id="map-canvas"></div>
+</body>
 </html>
