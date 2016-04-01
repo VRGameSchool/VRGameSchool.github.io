@@ -179,6 +179,11 @@ form input {
   background-color: #7C519C;
 }
 
+/* Next Button */
+#next a {
+  text-decoration: none;
+}
+
 /*Basic Container Styling*/
 .container {
   margin: 25px 0 25px 0;
