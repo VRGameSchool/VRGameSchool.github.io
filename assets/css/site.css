@@ -189,6 +189,12 @@ form input {
 #join-btn {
   background-color: orange;
 }
+#join-btn:hover {
+  background-color: #ffc04d;
+}
+#join-btn:active {
+  background-color: orange;
+}
 
 /* Start Button */
 #start {
