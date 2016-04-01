@@ -32,9 +32,9 @@
       <!-- Navigation Links -->
       <div class="links-container">
         <div class="nav-link"><a href="/">home</a></div>
-        <div class="nav-link"><a href="/views/about.html">about</a></div>
-        <div class="nav-link"><a href="/views/who-we-are.html">who we are</a></div>
-        <div class="nav-link"><a href="/views/classes.html">classes</a></div>
+        <div class="nav-link"><a href="/about.html">about</a></div>
+        <div class="nav-link"><a href="/who-we-are.html">who we are</a></div>
+        <div class="nav-link"><a href="/classes.html">classes</a></div>
         <div class="nav-link btn exo sm" id="nav-signup">signup</div>
       </div>
       <!-- Menu -->
@@ -49,36 +49,52 @@
   <!-- END NAVIGATION BAR -->
 
   <style>
-  #space-me {
-    margin-top: 75px;
+  #our-classes {
+    padding-top: 75px;
+  }
+  .section.interest {
+    border: 1px solid black;
+  }
+  .section.interest:hover {
+    border-bottom: 1px solid red;
   }
   </style>
 
-  <!-- (1) Home Section Parallax -->
-    <section id="img-parallax-3" data-type="background" data-speed="10">
-      <div id="hero-text">
-        <div class="section">
-          <img src="/assets/images/logo2.png" height="125px" id="space-me">
+  <!-- (2) SLIDE 1 -->
+    <div class="slide" id="our-classes">
+      <div class="container">
+        <h1>Our Classes</h1>
+        <h2>Available Classes:</h2>
+        <div class="section interest" data-package="daily">
+          <h2>Intro to Unity</h2>
+          <p>$150</p>
+          <p>Two night course for beginners</p>
         </div>
-      </div>
-    </section>
+        <div class="section interest" data-package="part-time">
+          <h2>VR User Interface</h2>
+          <p>$150</p>
+          <p>Two night course for beginners</p>
+        </div>
+        <div class="section interest" data-package="member">
+          <h2>Intro to Code</h2>
+          <p>$350</p>
+          <p>1 week evening course</p>
+        </div>
+        <div class="section interest" data-package="dedicated">
+          <h2>360 Video</h2>
+          <p>$600</p>
+          <p>One day class</p>
+        </div>
 
-    <!-- (2) SLIDE 2 -->
-      <div id="slide-2">
-        <div class="container">
-          <h1>What We Do</h1>
-        </div>
-    <!-- SECTION ONE -->
-        <div class="container">
-          <div class="section">
-            <div class="content">
-              <p>
-                Hello
-              </p>
-            </div>
-          </div>
-    <!-- CLOSE HOME SLIDE -->
+        <br />
+        <h2>Future Classes</h2>
+        <div class="section interest" data-package="daily">
+          <h2>VR & Unity Bootcamp</h2>
+          <p>TBA</p>
+          <p>12 week bootcamp</p>
         </div>
       </div>
+    <!-- Close About Slide -->
+    </div>
 
 </body>
